@@ -11,7 +11,7 @@ mongoose.connect(process.env.MONGODB_URL, {
   useCreateIndex: true,
 })
 
-const io = require("socket.io")(process.env.PORT, {
+const io = require("socket.io")(3001, {
   cors: {
     origin: "https://document-editor-xi.vercel.app",
     methods: ["GET", "POST"],

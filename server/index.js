@@ -10,7 +10,7 @@ Connection();
 
 const io = new Server(PORT, {
     cors: {
-        origin: 'https://document-editor-xi.vercel.app/',
+        origin: 'https://document-editor-xi.vercel.app',
         methods: ['GET', 'POST']
     }
 });
