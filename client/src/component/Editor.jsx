@@ -47,7 +47,7 @@ const Editor = () => {
     }, []);
 
     useEffect(() => {
-        const socketServer = io('http://localhost:9000');
+        const socketServer = io('https://zonal-stillness-production.up.railway.app');
         setSocket(socketServer);
 
         return () => {
