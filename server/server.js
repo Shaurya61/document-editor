@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGODB_URL, {
 
 const io = require("socket.io")(3001, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://document-editor-xi.vercel.app",
     methods: ["GET", "POST"],
   },
 })
